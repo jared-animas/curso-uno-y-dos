@@ -1,0 +1,26 @@
+<meta charset = " UTF-8 ">
+
+<h1>Programa de media de edades</h1>
+<script>
+	function saltolinea() {			//salto de linea
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase) {		//imprimir
+		document.write(frase);
+		saltolinea();
+	}
+	var total=0;
+	var cantidad = parseInt( prompt("ingrese la cantidad de miembros "));
+	var contador = 1;
+	while( contador <= cantidad ){
+		edad = parseInt( prompt("ingrese la edad del familiar "));
+		contador++;
+		total=total+edad;
+	}
+	var media = total/cantidad;
+	imprimir("La media de edades es "+ media);
+
+
+
+</script>

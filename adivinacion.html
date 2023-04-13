@@ -1,0 +1,27 @@
+<meta charset = " UTF-8 ">
+
+<h1>Programa año mundial</h1>
+<script>
+	function saltolinea() {			//salto de linea
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase) {		//imprimir
+		document.write(frase);
+		saltolinea();
+	}
+	var numeropensado = Math.round(Math.random()*10);
+	var numerolanzado= parseInt(prompt("Ingrese un numero ente el 0 al 10 "));
+	if (true) {
+
+		if (numeropensado==numerolanzado) {
+		imprimir("usted acerto el numero pensado era: "+ numeropensado);
+		}
+		else {
+		imprimir("usted no acerto el numero pensado era: "+ numeropensado);
+		}
+
+	}
+	
+
+</script>

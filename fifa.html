@@ -1,0 +1,25 @@
+<meta charset = " UTF-8 ">
+
+<h1>Programa de mudial de fifa</h1>
+<script>
+	function saltolinea() {			//salto de linea
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase) {		//imprimir
+		document.write(frase);
+		saltolinea();
+	}
+
+	var mudial = 1930;
+	var limite = parseInt(prompt("ingrese el año limite para calcular" ));
+	//alert("Hubo mudial de la fifa en el año "+ mudial);
+
+	while( mudial<= limite){
+		imprimir("Hubo mudial de la fifa en el año "+ mudial);
+		mudial = mudial+4;
+
+	}
+	alert("Fin" );
+
+</script>

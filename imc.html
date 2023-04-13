@@ -1,0 +1,35 @@
+<meta charset = " UTF-8 ">
+
+<h1>Programa de IMC</h1>
+<script>
+	function saltolinea() {			//salto de linea
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase) {		//imprimir
+		document.write(frase);
+		saltolinea();
+	}
+
+	function IMC(peso, altura,nombre) {
+		imc = peso/(altura*altura);
+		imprimir("el indice de masa corporal de " + nombre +" es: "+ imc);
+		comprobacion(imc);
+	}
+
+	function comprobacion(imcc) {
+		if (imcc < 18.5) { imprimir("el imc es bajo");}
+		if (imcc >= 18.5 && imcc <= 24.9 ) { imprimir("el imc es normal");} 
+		if (imcc >= 25 && imcc <= 29.9) {imprimir("el imc marca sobrepeso");} 
+		if (imcc > 30 ) { imprimir(" el imc marca obecidad");} 
+	}
+	nombre = prompt("ingrese su nombre ");
+	peso =  prompt("ingrese su peso ");
+	altura =  prompt("Ingrese su altura");
+	IMC(peso, altura, nombre);
+	
+	
+
+
+</script>
+

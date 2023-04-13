@@ -1,0 +1,37 @@
+<meta charset = " UTF-8 ">
+
+<h1>Programa de IMC con promedio</h1>
+<script>
+	function saltolinea() {			//salto de linea
+		document.write("<br><br>");
+	}
+
+	function imprimir(frase) {		//imprimir
+		document.write(frase);
+		saltolinea();
+	}
+
+	function IMC(peso, altura,nombre) {
+		imc= peso/(altura*altura);
+		return (imc);
+	}
+
+	nombre = "pepe";
+	imca= IMC(71,1.70,nombre);
+	imprimir("El imc de "+ nombre + " es " +imca);
+	nombre = "luis";
+	imcb= IMC(78,1.60,nombre);
+	imprimir("El imc de "+ nombre + " es " +imcb);
+	nombre = "dani";
+	imcc= IMC(81,1.90,nombre);
+	imprimir("El imc de "+ nombre + " es " +imcc);
+
+	imprimir("el promedio de IMC es: "+((imca+imcb+imcc)/3));
+
+/*	nombre = "eli";
+	retorno= IMC(81,1.90,nombre);
+	imprimir("el indice de masa corporal es: "+ retorno);
+*/
+	
+
+</script>
